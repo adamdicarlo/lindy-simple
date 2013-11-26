@@ -17,6 +17,12 @@ test(
 
 test('{{ whoops }} literal {{ a b }}{{', {}, ' literal {{ a b }}{{')
 
+test(
+    'Roses are {{c1}}\nviolets are {{c2}}\ntemplates are {{adj}}\n{{punchline}}'
+  , {c1: 'pink', c2: 'purple', adj: 'useful', punchline: 'ERROR: rhyme not found'}
+  , 'Roses are pink\nviolets are purple\ntemplates are useful\nERROR: rhyme not found'
+)
+
 function test(jig, context, expected) {
   var tpl = jigplate(jig)
   assert.equal(tpl(context), expected)
