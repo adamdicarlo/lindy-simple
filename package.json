@@ -1,0 +1,14 @@
+{
+  "name": "jigplate",
+  "version": "0.0.0",
+  "description": "Simple templating.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "template"
+  ],
+  "author": "Adam J. DiCarlo",
+  "license": "BSD"
+}
