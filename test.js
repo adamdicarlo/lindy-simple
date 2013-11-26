@@ -4,15 +4,15 @@ var assert = require('assert')
 test('Hello, world!', {}, 'Hello, world!')
 
 test(
-  'hello {{ world }} how is your {{ weekday }} going?',
-  { world: 'dude', weekday: 'tuesday' },
-  'hello dude how is your tuesday going?'
+    'hello {{ world }} how is your {{ weekday }} going?'
+  , {world: 'dude', weekday: 'tuesday'}
+  , 'hello dude how is your tuesday going?'
 )
 
 test(
-  '{{first}}{{second}}',
-  { first: '{{ second }}', second: '{{ first }}' },
-  '{{ second }}{{ first }}'
+    '{{first}}{{second}}'
+  , {first: '{{ second }}', second: '{{ first }}'}
+  , '{{ second }}{{ first }}'
 )
 
 test('{{ whoops }} literal {{ a b }}{{', {}, ' literal {{ a b }}{{')
