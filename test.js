@@ -15,11 +15,7 @@ test(
   '{{ second }}{{ first }}'
 )
 
-test(
-  '{{ whoops }} is my favorite {{ a b }}{{',
-  {},
-  ' is my favorite {{ a b }}{{'
-)
+test('{{ whoops }} literal {{ a b }}{{', {}, ' literal {{ a b }}{{')
 
 function test(jig, context, expected) {
   var tpl = jigplate(jig)
