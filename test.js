@@ -1,6 +1,8 @@
 var assert = require('assert')
   , jigplate = require('./index')
 
+test('Hello, world!', {}, 'Hello, world!')
+
 test(
   'hello {{ world }} how is your {{ weekday }} going?',
   { world: 'dude', weekday: 'tuesday' },
