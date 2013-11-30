@@ -9,6 +9,9 @@
   "keywords": [
     "template"
   ],
-  "author": "Adam J. DiCarlo",
-  "license": "BSD"
+  "author": {
+    "name": "Adam J. DiCarlo",
+    "email": "adam.dicarlo@gmail.com"
+  },
+  "license": "MIT"
 }
