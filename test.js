@@ -1,5 +1,5 @@
 var assert = require('assert')
-  , jigplate = require('./index')
+  , lindy = require('./index')
 
 test('Hello, world!', {}, 'Hello, world!')
 
@@ -24,6 +24,6 @@ test(
 )
 
 function test(jig, context, expected) {
-  var tpl = jigplate(jig)
+  var tpl = lindy(jig)
   assert.equal(tpl(context), expected)
 }

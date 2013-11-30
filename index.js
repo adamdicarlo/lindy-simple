@@ -1,6 +1,6 @@
-module.exports = function jigplate(jig) {
+module.exports = function lindy(hop) {
   return function(context) {
-    return jig.replace(/\{\{\s*(\w+)\s*\}\}/g, function(match, p1) {
+    return hop.replace(/\{\{\s*(\w+)\s*\}\}/g, function(match, p1) {
       return context[p1] || ''
     })
   }
