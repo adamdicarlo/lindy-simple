@@ -8,6 +8,7 @@ module.exports = function lindy_simple(tpl) {
   }
 
   var ops = []
+    , match
 
   while(tpl.length) {
     match = tpl.match(/\{\{\s*(\w+)\s*\}\}/)
