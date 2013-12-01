@@ -23,7 +23,7 @@ test(
   , 'Roses are pink\nviolets are purple\ntemplates are useful\nERROR: rhyme not found'
 )
 
-function test(jig, context, expected) {
-  var tpl = lindy(jig)
+function test(tpl_source, context, expected) {
+  var tpl = lindy(tpl_source)
   assert.equal(tpl(context), expected)
 }
