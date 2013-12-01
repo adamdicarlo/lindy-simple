@@ -14,7 +14,7 @@ module.exports = function lindy_simple(tpl) {
     match = tpl.match(/\{\{\s*(\w+)\s*\}\}/)
     if(!match) {
       ops.push(static_text(tpl))
-      break;
+      break
     }
 
     if(match.index > 0) {
