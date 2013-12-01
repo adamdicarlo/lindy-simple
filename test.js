@@ -1,5 +1,5 @@
 var assert = require('assert')
-  , lindy = require('./index')
+  , lindy_simple = require('./index')
 
 test('Hello, world!', {}, 'Hello, world!')
 
@@ -24,6 +24,6 @@ test(
 )
 
 function test(tpl_source, context, expected) {
-  var tpl = lindy(tpl_source)
+  var tpl = lindy_simple(tpl_source)
   assert.equal(tpl(context), expected)
 }

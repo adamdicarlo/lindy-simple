@@ -1,12 +1,13 @@
 {
-  "name": "lindy",
+  "name": "lindy-simple",
   "version": "0.0.0",
-  "description": "Simple templating.",
+  "description": "Simple string-substitution templating.",
   "main": "index.js",
   "scripts": {
     "test": "node test.js"
   },
   "keywords": [
+    "lindy",
     "template"
   ],
   "author": {

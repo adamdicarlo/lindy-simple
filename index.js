@@ -1,4 +1,4 @@
-module.exports = function lindy(tpl) {
+module.exports = function lindy_simple(tpl) {
   function static_text(text) {
     return function() { return text }
   }
