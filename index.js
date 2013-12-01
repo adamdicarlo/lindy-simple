@@ -24,7 +24,7 @@ module.exports = function lindy_simple(tpl) {
     tpl = tpl.slice(match.index + match[0].length)
   }
 
-  return function(context) {
+  return function lindy_simple_tpl(context) {
     return ops.reduce(function(prior, current) {
       return prior + current(context)
     }, '')
