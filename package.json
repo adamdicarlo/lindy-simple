@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "Simple string-substitution templating.",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/adamdicarlo/lindy-simple.git"
+  },
   "scripts": {
     "test": "node test.js"
   },
