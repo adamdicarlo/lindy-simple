@@ -1,6 +1,6 @@
 {
   "name": "lindy-simple",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Simple string-substitution templating.",
   "main": "index.js",
   "scripts": {
