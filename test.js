@@ -23,6 +23,12 @@ test(
   , 'Roses are pink\nviolets are purple\ntemplates are useful\nERROR: rhyme not found'
 )
 
+test(
+    'Felis catus is your {{ words.categorical }} {{ words.title }}'
+  ,  {words: {categorical: 'taxonomic', title: 'nomenclature'}}
+  , 'Felis catus is your taxonomic nomenclature'
+)
+
 function test(tpl_source, context, expected) {
   var tpl = lindy_simple(tpl_source)
   assert.equal(tpl(context), expected)

@@ -1,30 +1,35 @@
+var peek = require('peek')
+
 module.exports = function lindy_simple(tpl) {
-  function static_text(text) {
+  function lindy_simple_text(text) {
     return function() { return text }
   }
 
-  function variable(var_name) {
-    return function(context) { return context[var_name] || '' }
+  function lindy_simple_variable(var_name) {
+    var peeker = peek(var_name)
+    return function(context) {
+      return peeker(context) || ''
+    }
   }
 
   var ops = []
     , match
 
   while(tpl.length) {
-    match = tpl.match(/\{\{\s*(\w+)\s*\}\}/)
+    match = tpl.match(/\{\{\s*([\w\d\-\.]+)\s*\}\}/)
     if(!match) {
-      ops.push(static_text(tpl))
+      ops.push(lindy_simple_text(tpl))
       break
     }
 
     if(match.index > 0) {
-      ops.push(static_text(tpl.slice(0, match.index)))
+      ops.push(lindy_simple_text(tpl.slice(0, match.index)))
     }
-    ops.push(variable(match[1]))
+    ops.push(lindy_simple_variable(match[1]))
     tpl = tpl.slice(match.index + match[0].length)
   }
 
-  return function lindy_simple_tpl(context) {
+  return function lindy_simple_template(context) {
     return ops.reduce(function(prior, current) {
       return prior + current(context)
     }, '')

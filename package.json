@@ -14,6 +14,9 @@
     "lindy",
     "template"
   ],
+  "dependencies": {
+    "peek": "0.0.1"
+  },
   "author": {
     "name": "Adam J. DiCarlo",
     "email": "adam.dicarlo@gmail.com"
