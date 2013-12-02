@@ -24,7 +24,7 @@ Use templates for simple string replacements.
   $ git clone https://github.com/adamdicarlo/lindy-simple.git # clone or fork
   $ cd lindy-simple
   $ npm install
-  $ npm test lindy-simple
+  $ npm test
 ```
 
 ## License
