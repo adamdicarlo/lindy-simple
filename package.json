@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/adamdicarlo/lindy-simple.git"
+    "url": "https://github.com/adamdicarlo/lindy-simple.git"
   },
   "scripts": {
     "test": "node test.js"
@@ -14,6 +14,9 @@
     "lindy",
     "template"
   ],
+  "bugs": {
+    "url": "https://github.com/adamdicarlo/lindy-simple/issues"
+  },
   "dependencies": {
     "peek": "0.0.1"
   },
