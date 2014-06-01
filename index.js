@@ -8,7 +8,8 @@ module.exports = function lindy_simple(tpl) {
   function variable(var_name) {
     var peeker = peek(var_name)
     return function lindy_simple_variable(context) {
-      return peeker(context) || ''
+      var value = peeker(context)
+      return (typeof value === 'undefined') ? '' : value
     }
   }
 

@@ -1,6 +1,8 @@
 var assert = require('assert')
   , lindy_simple = require('./index')
 
+test('number {{n}}', {n: 0}, 'number 0')
+
 test('Hello, world!', {}, 'Hello, world!')
 
 test(
