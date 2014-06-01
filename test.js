@@ -3,6 +3,8 @@ var assert = require('assert')
 
 test('number {{n}}', {n: 0}, 'number 0')
 
+test('{{n}}', {n: null}, 'null')
+
 test('Hello, world!', {}, 'Hello, world!')
 
 test(
